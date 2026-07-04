@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casa do João | Restaurante & Gastronomia</title>
+    <link rel="icon" type="image/png" href="static/imagens/iconeee.png">
+    <link rel="apple-touch-icon" href="static/imagens/iconeee.png">
+
+    <meta name="theme-color" content="#0f172a">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="navbar-links">
+            <a href="#home" data-lang="navHome">Home</a>
+            <a href="#sobre" data-lang="navSobre">Sobre</a>
+            <a href="#menu" data-lang="navMenu">Menu</a>
+            <a href="#contato" data-lang="navContato">Contato</a>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <header id="home" class="hero">
+        <div class="slideshow">
+            <div class="slide" style="background-image: url('static/imagens/casaa.png');"></div>
+            <div class="slide" style="background-image: url('static/imagens/corte de comitiva.png');"></div>
+            <div class="slide" style="background-image: url('static/imagens/medalhao da fronteira.png');"></div>
+            <div class="slide" style="background-image: url('static/imagens/traíra a moda.png');"></div>
+        </div>
+        <div class="hero-overlay"></div>
+            <div class="hero-content">
+            <h1 data-lang="titulo">Casa do João</h1>
+
+            <p class="hero-sub" data-lang="subtitulo">
+            Onde cada prato conta uma história de família e afeto
+            </p>
+
+            <a href="https://wa.me/5567981402463"
+            class="btn"
+            data-lang="reservar">
+            Reservar Mesa
+            </a>
+
+            <div class="status-restaurante">
+
+            <div class="status">
+
+            <span class="bolinha"></span>
+
+            <span id="status-texto">
+                Carregando...
+            </span>
+
+        </div>
+
+        <button id="abrirHorario" data-lang="horarioCompleto">
+            🕒 Ver horário completo
+        </button>
+
+    </div>
+
+</div>
+
+        <div class="hero-scroll">
+            <span></span>
+        </div>
+    </header>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="sobre">
+        <div class="container">
+            <div class="sobre-wrapper reveal">
+                <div class="sobre-imagem">
+                    <div class="moldura-foto">
+                        <img src="static/imagens/casaa.png" alt="Ambiente Casa do João">
+                    </div>
+                </div>
+                <div class="sobre-texto">
+                    <p class="label-secao" data-lang="nossaHistoria">Nossa História</p>
+                    <h2 data-lang="sobreTitulo">Sobre Nós</h2>
+                    <p class="subtitulo" data-lang="sobreSub">Tradição, família e sabor desde 2007</p>
+                    <div class="linha-tempo">
+                        <p data-lang="historia1"><strong>2007 — O começo de tudo:</strong>A Casa do João nasceu do sonho de transformar nosso próprio lar em um espaço para receber pessoas com carinho e boa comida.</p>
+                        <p data-lang="historia2"><strong>Transformação:</strong> O que era apenas uma casa simples foi se tornando um ambiente cheio de vida: a cozinha surgiu onde havia um jardim, as mesas nasceram da antiga horta e cada canto ganhou um propósito.</p>
+                        <p data-lang="historia3"><strong>Hoje:</strong> Esse sonho se tornou realidade. Contamos com uma equipe dedicada que recebe você e sua família com qualidade, cuidado e atenção.</p>
+                    </div>
+                    <p class="frase-final" data-lang="fraseFinal">"Aqui, é a nossa família recebendo a sua família."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DESTAQUES -->
+    <section class="destaques">
+        <div class="destaques-inner">
+            <div class="destaque-item reveal">
+                <div class="destaque-icone">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    </svg>
+                </div>
+                <h3 data-lang="anosTitulo">+18 Anos</h3>
+                <p data-lang="anosTexto">Quase duas décadas levando tradição e o verdadeiro sabor de família para a mesa dos nossos clientes.</p>
+            </div>
+            <div class="destaque-divisor"></div>
+            <div class="destaque-item reveal" style="transition-delay: 0.2s;">
+                <div class="destaque-icone">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                        <path d="M3 2h18v6a9 9 0 01-18 0V2zM12 14v7M8 21h8"/>
+                    </svg>
+                </div>
+                <h3 data-lang="saborTitulo">Sabor Caseiro</h3>
+                <p data-lang="saborTexto">Pratos preparados com receitas de família, ingredientes frescos e o tempero que só a Casa do João tem.</p>
+            </div>
+            <div class="destaque-divisor"></div>
+            <div class="destaque-item reveal" style="transition-delay: 0.4s;">
+                <div class="destaque-icone">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+                        <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+                        <polyline points="9 22 9 12 15 12 15 22"/>
+                    </svg>
+                </div>
+                <h3 data-lang="ambienteTitulo">Ambiente Acolhedor</h3>
+                <p data-lang="ambienteTexto">Espaço pensado para receber famílias, casais e grupos com conforto e hospitalidade em cada visita.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu" class="menu-gastronomia">
+        <div class="container-titulo reveal">
+            <p class="label-secao"data-lang="gastronomia">Gastronomia</p>
+            <h2 data-lang="menuTitulo">Nosso Menu</h2>
+            <p class="subtitulo"data-lang="menuSub">Uma amostra da nossa essência culinária</p>
+        </div>
+
+        <div class="carrossel-container">
+            <div class="carrossel-track track-esquerda">
+                <div class="foto-item"><img src="static/imagens/traíra a moda.png" alt="Prato"></div>
+                <div class="foto-item"><img src="static/imagens/pintado ancestral.png" alt="Prato"></div>
+                <div class="foto-item"><img src="static/imagens/parmegiana de mandioca.png" alt="Prato"></div>
+                <div class="foto-item"><img src="static/imagens/medalhao da fronteira.png" alt="Prato"></div>
+                <div class="foto-item"><img src="static/imagens/jacare dourado.png" alt="Prato"></div>
+                <div class="foto-item"><img src="static/imagens/ceviche de jacare.png" alt="Prato"></div>
+                <div class="foto-item"><img src="static/imagens/corte de comitiva.png" alt="Prato"></div>
+                <div class="foto-item"><img src="static/imagens/traíra frita.png" alt="Prato"></div>
+                <div class="foto-item"><img src="static/imagens/croca do cerrado.png" alt="Prato"></div>
+                <div class="foto-item"><img src="static/imagens/pintado a urucum.png" alt="Prato"></div>
+                <div class="foto-item"><img src="static/imagens/pirarucu da leo.png" alt="Prato"></div>
+                <div class="foto-item"><img src="static/imagens/casquinha de traíra.png" alt="Prato"></div>
+            </div>
+        </div>
+
+        <div class="carrossel-container" style="margin-top: 20px;">
+            <div class="carrossel-track track-direita">
+                <div class="foto-item"><img src="static/imagens/banzeirinho.png" alt="Doce"></div>
+                <div class="foto-item"><img src="static/imagens/petit gateau da lorena.png" alt="Doce"></div>
+                <div class="foto-item"><img src="static/imagens/alua.png" alt="Doce"></div>
+                <div class="foto-item"><img src="static/imagens/bolinhoo.png" alt="Doce"></div>
+                <div class="foto-item"><img src="static/imagens/negroni.png" alt="Doce"></div>
+                <div class="foto-item"><img src="static/imagens/sorvete quente.png" alt="Doce"></div>
+                <div class="foto-item"><img src="static/imagens/rabo de galo.png" alt="Doce"></div>
+                <div class="foto-item"><img src="static/imagens/petit gateau da lorena.png" alt="Doce"></div>
+                <div class="foto-item"><img src="static/imagens/aperol.png" alt="Doce"></div>
+                <div class="foto-item"><img src="static/imagens/mousse da tirene.png" alt="Doce"></div>
+                <div class="foto-item"><img src="static/imagens/banzeirinho.png" alt="Doce"></div>
+            </div>
+        </div>
+
+        <div class="menu-whatsapp-container reveal">
+
+            <p class="texto-chamada" data-lang="textoWhatsapp">
+            Gostou do que viu? Nosso cardápio completo está disponível direto no nosso WhatsApp.
+            </p>
+
+            <a href="https://wa.me/5567981402463?text=Olá!%20Gostaria%20de%20ver%20o%20cardápio."
+            class="btn-cardapio"
+            target="_blank">
+
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+            <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.524 5.855L.057 23.882l6.194-1.624A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.373l-.36-.214-3.713.973.99-3.623-.235-.372A9.818 9.818 0 1112 21.818z"/>
+        </svg>
+
+        <span data-lang="btnCardapio">
+            Ver Cardápio no WhatsApp
+        </span>
+
+            </a>
+
+        </div>
+    </section>
+
+    <!-- FOOTER / CONTATO -->
+    <footer id="contato">
+        <div class="footer-topo reveal">
+            <div class="footer-col">
+                <h3 data-lang="footerTitulo">Casa do João</h3>
+                <p class="footer-slogan"data-lang="footerSlogan">Tradição, família e sabor desde 2007</p>
+            </div>
+            <div class="footer-col">
+                <p class="footer-label"data-lang="localizacao">Localização</p>
+                <p class="footer-info">Centro | Bonito - MS</p>
+            </div>
+            <div class="footer-col">
+                <p class="footer-label"data-lang="contato">Contato</p>
+                <p class="footer-info">(67) 98140-2463</p>
+            </div>
+        </div>
+
+        <div class="mapa-localizacao">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.6175488148483!2d-56.484978625584105!3d-21.127808476721906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x947c5f2ff27e7a0b%3A0xd592af140755fb09!2sCasa%20do%20Jo%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1781396255341!5m2!1spt-BR!2sbr"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+        <div class="idiomas">
+
+            <img src="static/imagens/bandeira do brasil.jpg"
+            alt="Português"
+            onclick="trocarIdioma('pt')">
+
+            <img src="static/imagens/bandeira do estados unidos.jpg"
+            alt="English"
+            onclick="trocarIdioma('en')">
+
+            <img src="static/imagens/bandeira da espanha.jpg"
+            alt="Español"
+            onclick="trocarIdioma('es')">
+
+        </div>
+
+        <div class="footer-copy"data-lang="copyright">
+            &copy; 2026 Casa do João. Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <!-- WHATSAPP FLUTUANTE -->
+    <a href="https://wa.me/5567981402463" class="whatsapp-float" target="_blank">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.524 5.855L.057 23.882l6.194-1.624A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.373l-.36-.214-3.713.973.99-3.623-.235-.372A9.818 9.818 0 1112 21.818z"/></svg>
+    </a>
+
+    <div class="modal-horario" id="modalHorario">
+
+    <div class="modal-conteudo">
+
+        <span class="fechar" id="fecharHorario">&times;</span>
+
+        <h2 data-lang="tituloHorario">Horário de Funcionamento</h2>
+
+        <div class="horarios">
+
+            <p data-lang="segunda"></p>
+            <p data-lang="terca"></p>
+            <p data-lang="quarta"></p>
+            <p data-lang="quinta"></p>
+            <p data-lang="sexta"></p>
+            <p data-lang="sabado"></p>
+            <p data-lang="domingo"></p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
