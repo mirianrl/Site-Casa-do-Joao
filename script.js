@@ -1,12 +1,23 @@
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            entry.target.classList.add('visivel');
+            entry.target.classList.add("visivel");
+            observer.unobserve(entry.target);
         }
     });
-}, { threshold: 0.15 });
+}, {
+    threshold: 0.15
+});
+
+document.querySelectorAll(".reveal").forEach(el => {
+    observer.observe(el);
+});
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+document.querySelectorAll(".avaliacao-card").forEach((card, index) => {
+    card.style.transitionDelay = `${index * 0.15}s`;
+});
 
 const idiomas = {
 
@@ -14,7 +25,9 @@ const idiomas = {
 
         navHome: "Home",
         navSobre: "Sobre",
+        navEventos: "Eventos",
         navMenu: "Menu",
+        navAvaliacoes: "Avaliações",
         navContato: "Contato",
 
         titulo: "Casa do João",
@@ -46,7 +59,7 @@ const idiomas = {
 
         historia3: "<strong>Hoje:</strong> Esse sonho se tornou realidade. Contamos com uma equipe dedicada que recebe você e sua família com qualidade, cuidado e atenção.",
 
-        fraseFinal: "\"Aqui, é a nossa família recebendo a sua família.\"",
+        fraseFinal: "\"Comida para amar, um lugar para lembrar.\"",
 
         anosTitulo: "+18 Anos",
         anosTexto: "Quase duas décadas levando tradição e o verdadeiro sabor de família para a mesa dos nossos clientes.",
@@ -61,13 +74,34 @@ const idiomas = {
         menuTitulo: "Nosso Menu",
         menuSub: "Uma amostra da nossa essência culinária",
 
-        textoWhatsapp: "Gostou do que viu? Nosso cardápio completo está disponível direto no nosso WhatsApp.",
+        textoWhatsapp: "Gostou do que viu? Explore nosso cardápio completo e descubra todos os sabores da Casa do João.",
 
-        btnCardapio: "Ver Cardápio no WhatsApp",
+        btnCardapio: "Ver Cardápio",
+
+        avaliacoesLabel: "EXPERIÊNCIAS",
+        avaliacoesTitulo: "O que nossos clientes dizem",
+        avaliacoesSubtitulo: "Avaliações de quem viveu a experiência Casa do João.",
+
+        avaliacao1Texto: "Excelente experiência na Casa do João! O ceviche de jacaré e o Pintado Ancestral estavam incríveis. Atendimento impecável e ambiente especial.",
+        avaliacao1Nome: "Camila Wlinger",
+
+        avaliacao2Texto: "Comida deliciosa, atendimento atencioso e uma recepção que fez toda a diferença. Voltaremos com certeza!",
+        avaliacao2Nome: "Pamela Souza",
+
+        avaliacao3Texto: "Lugar incrível! Ambiente acolhedor, pratos impecáveis e uma experiência que superou todas as expectativas.",
+        avaliacao3Nome: "Janayna Felizali",
+
+        avaliacao4Texto: "A Casa do João ganhou meu coração. Sabores marcantes, clima aconchegante e um atendimento que faz você se sentir em casa.",
+        avaliacao4Nome: "Raquel Helena",
+
+        avaliacoesConvite: "Gostou da experiência Casa do João?",
+        avaliacoesBotao: "Nos avalie ⭐",
 
         footerTitulo: "Casa do João",
         footerSlogan: "Tradição, família e sabor desde 2007",
 
+        instagram: "Instagram",
+        tiktok: "TikTok",
         localizacao: "Localização",
         contato: "Contato",
 
@@ -79,7 +113,9 @@ const idiomas = {
 
         navHome: "Home",
         navSobre: "About",
+        navEventos: "Events",
         navMenu: "Menu",
+        navAvaliacoes: "Reviews",
         navContato: "Contact",
 
         titulo: "Casa do João",
@@ -111,7 +147,7 @@ const idiomas = {
 
         historia3: "<strong>Today:</strong> That dream has become reality. Our dedicated team welcomes you and your family with quality, care and genuine hospitality.",
 
-        fraseFinal: "\"Here, our family welcomes yours.\"",
+        fraseFinal: "\"Food to love, a place to remember.\"",
 
         anosTitulo: "18+ Years",
         anosTexto: "Nearly two decades bringing tradition and authentic homemade flavor to our guests.",
@@ -126,13 +162,34 @@ const idiomas = {
         menuTitulo: "Our Menu",
         menuSub: "A taste of our culinary essence",
 
-        textoWhatsapp: "Liked what you saw? Our full menu is available directly on WhatsApp.",
+        textoWhatsapp: "Enjoyed what you saw? Explore our full menu and discover all the flavors of Casa do João.",
 
-        btnCardapio: "View Menu on WhatsApp",
+        btnCardapio: "View Menu",
+
+        avaliacoesLabel: "EXPERIENCES",
+        avaliacoesTitulo: "What our customers say",
+        avaliacoesSubtitulo: "Reviews from those who experienced Casa do João.",
+
+        avaliacao1Texto: "An excellent experience at Casa do João! The caiman ceviche and Pintado Ancestral were outstanding. Impeccable service and a wonderful atmosphere.",
+        avaliacao1Nome: "Camila Wlinger",
+
+        avaliacao2Texto: "Delicious food, attentive service, and a warm welcome that made all the difference. We'll definitely be back!",
+        avaliacao2Nome: "Pamela Souza",
+
+        avaliacao3Texto: "Amazing place! Cozy atmosphere, outstanding dishes, and an experience that exceeded all expectations.",
+        avaliacao3Nome: "Janayna Felizali",
+
+        avaliacao4Texto: "Casa do João won my heart. Memorable flavors, a welcoming atmosphere, and service that makes you feel right at home.",
+        avaliacao4Nome: "Raquel Helena",
+
+        avaliacoesConvite: "Did you enjoy your experience at Casa do João?",
+        avaliacoesBotao: "Review us ⭐",
 
         footerTitulo: "Casa do João",
         footerSlogan: "Tradition, family and flavor since 2007",
 
+        instagram: "Instagram",
+        tiktok: "TikTok",
         localizacao: "Location",
         contato: "Contact",
 
@@ -143,8 +200,10 @@ const idiomas = {
     es: {
 
         navHome: "Inicio",
-        navSobre: "Nosotros",
+        navSobre: "Sobre nosotros",
+        navEventos: "Eventos",
         navMenu: "Menú",
+        navAvaliacoes: "Reseñas",
         navContato: "Contacto",
 
         titulo: "Casa do João",
@@ -176,7 +235,7 @@ const idiomas = {
 
         historia3: "<strong>Hoy:</strong> Ese sueño es una realidad. Nuestro equipo recibe a usted y a su familia con calidad, atención y hospitalidad.",
 
-        fraseFinal: "\"Aquí, nuestra familia recibe a la suya.\"",
+        fraseFinal: "\"Comida para amar, un lugar para recordar.\"",
 
         anosTitulo: "Más de 18 Años",
         anosTexto: "Casi dos décadas llevando tradición y el auténtico sabor casero a nuestros clientes.",
@@ -191,13 +250,34 @@ const idiomas = {
         menuTitulo: "Nuestro Menú",
         menuSub: "Una muestra de nuestra esencia culinaria",
 
-        textoWhatsapp: "¿Le gustó lo que vio? Nuestro menú completo está disponible directamente en WhatsApp.",
+        textoWhatsapp: "¿Le gustó lo que vio? Explore nuestro menú completo y descubra todos los sabores de Casa do João.",
 
-        btnCardapio: "Ver Menú en WhatsApp",
+        btnCardapio: "Ver Menú",
+
+        avaliacoesLabel: "EXPERIENCIAS",
+        avaliacoesTitulo: "Lo que dicen nuestros clientes",
+        avaliacoesSubtitulo: "Opiniones de quienes vivieron la experiencia Casa do João.",
+
+        avaliacao1Texto: "¡Una experiencia excelente en Casa do João! El ceviche de yacaré y el Pintado Ancestral estuvieron increíbles. Servicio impecable y un ambiente encantador.",
+        avaliacao1Nome: "Camila Wlinger",
+
+        avaliacao2Texto: "Comida deliciosa, atención muy amable y una cálida bienvenida que marcó la diferencia. ¡Sin duda volveremos!",
+        avaliacao2Nome: "Pamela Souza",
+
+        avaliacao3Texto: "¡Un lugar increíble! Ambiente acogedor, platos excelentes y una experiencia que superó todas las expectativas.",
+        avaliacao3Nome: "Janayna Felizali",
+
+        avaliacao4Texto: "Casa do João conquistó mi corazón. Sabores inolvidables, un ambiente acogedor y una atención que te hace sentir como en casa.",
+        avaliacao4Nome: "Raquel Helena",
+
+        avaliacoesConvite: "¿Te gustó la experiencia Casa do João?",
+        avaliacoesBotao: "Evalúanos ⭐",
 
         footerTitulo: "Casa do João",
         footerSlogan: "Tradición, familia y sabor desde 2007",
 
+        instagram: "Instagram",
+        tiktok: "TikTok",
         localizacao: "Ubicación",
         contato: "Contacto",
 

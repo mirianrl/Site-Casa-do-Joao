@@ -9,6 +9,7 @@
 
     <meta name="theme-color" content="#0f172a">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="static/style.css">
 </head>
@@ -33,7 +34,7 @@
             <div class="slide" style="background-image: url('static/imagens/traíra a moda.png');"></div>
         </div>
         <div class="hero-overlay"></div>
-            <div class="hero-content">
+            <div class="hero-content reveal">
             <h1 data-lang="titulo">Casa do João</h1>
 
             <p class="hero-sub" data-lang="subtitulo">
@@ -89,16 +90,16 @@
                         <p data-lang="historia2"><strong>Transformação:</strong> O que era apenas uma casa simples foi se tornando um ambiente cheio de vida: a cozinha surgiu onde havia um jardim, as mesas nasceram da antiga horta e cada canto ganhou um propósito.</p>
                         <p data-lang="historia3"><strong>Hoje:</strong> Esse sonho se tornou realidade. Contamos com uma equipe dedicada que recebe você e sua família com qualidade, cuidado e atenção.</p>
                     </div>
-                    <p class="frase-final" data-lang="fraseFinal">"Aqui, é a nossa família recebendo a sua família."</p>
+                    <p class="frase-final" data-lang="fraseFinal">"Comida para amar, um lugar para lembrar."</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- DESTAQUES -->
-    <section class="destaques">
+    <section class="destaques reveal">
         <div class="destaques-inner">
-            <div class="destaque-item reveal">
+            <div class="destaque-item">
                 <div class="destaque-icone">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
                         <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
@@ -132,14 +133,14 @@
     </section>
 
     <!-- MENU -->
-    <section id="menu" class="menu-gastronomia">
+    <section id="menu" class="menu-gastronomia reveal">
         <div class="container-titulo reveal">
             <p class="label-secao"data-lang="gastronomia">Gastronomia</p>
             <h2 data-lang="menuTitulo">Nosso Menu</h2>
             <p class="subtitulo"data-lang="menuSub">Uma amostra da nossa essência culinária</p>
         </div>
 
-        <div class="carrossel-container">
+        <div class="carrossel-container reveal">
             <div class="carrossel-track track-esquerda">
                 <div class="foto-item"><img src="static/imagens/traíra a moda.png" alt="Prato"></div>
                 <div class="foto-item"><img src="static/imagens/pintado ancestral.png" alt="Prato"></div>
@@ -156,7 +157,7 @@
             </div>
         </div>
 
-        <div class="carrossel-container" style="margin-top: 20px;">
+        <div class="carrossel-container reveal" style="margin-top:20px;">
             <div class="carrossel-track track-direita">
                 <div class="foto-item"><img src="static/imagens/banzeirinho.png" alt="Doce"></div>
                 <div class="foto-item"><img src="static/imagens/petit gateau da lorena.png" alt="Doce"></div>
@@ -175,18 +176,15 @@
         <div class="menu-whatsapp-container reveal">
 
             <p class="texto-chamada" data-lang="textoWhatsapp">
-            Gostou do que viu? Nosso cardápio completo está disponível direto no nosso WhatsApp.
+           Gostou do que viu? Explore nosso cardápio completo e descubra todos os sabores da Casa do João.
             </p>
 
-            <a href="https://wa.me/5567981402463?text=Olá!%20Gostaria%20de%20ver%20o%20cardápio."
-            class="btn-cardapio"
-            target="_blank">
+            <a href="https://livemenu.app/menu/63777c2758f35b004a59529d?fbclid=PAT01DUATg3shleHRuA2FlbQIxMABzcnRjBmFwcF9pZA81NjcwNjczNDMzNTI0MjcAAaeimq7V45ANKz5heL61GDE-rx9-6sa-cZ_Reh5XDBjBriUI2fKd2EuPFEgUiA_aem_aozxdBBqkMBDMpPK9DFHeQ"
+                class="btn-cardapio"
+                target="_blank">
 
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
-            <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.524 5.855L.057 23.882l6.194-1.624A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.373l-.36-.214-3.713.973.99-3.623-.235-.372A9.818 9.818 0 1112 21.818z"/>
-        </svg>
-
+        <i class="fa-solid fa-utensils"></i>
+        
         <span data-lang="btnCardapio">
             Ver Cardápio no WhatsApp
         </span>
@@ -195,20 +193,146 @@
 
         </div>
     </section>
+    
 
-    <!-- FOOTER / CONTATO -->
-    <footer id="contato">
-    <div class="footer-topo reveal">
+    <section id="avaliacoes" class="avaliacoes-section reveal">
 
-        <div class="footer-col">
-            <h3 data-lang="footerTitulo">Casa do João</h3>
-            <p class="footer-slogan" data-lang="footerSlogan">
-                Tradição, família e sabor desde 2007
-            </p>
+    <div class="container">
+
+        <p class="label-secao" data-lang="avaliacoesLabel">
+            EXPERIÊNCIAS
+        </p>
+
+        <h2 data-lang="avaliacoesTitulo">
+            O que nossos clientes dizem
+        </h2>
+
+        <p class="subtitulo" data-lang="avaliacoesSubtitulo">
+            Avaliações de quem viveu a experiência Casa do João.
+        </p>
+
+
+        <div class="avaliacoes-grid">
+
+
+            <div class="avaliacao-card reveal">
+
+                <div class="estrelas">★★★★★</div>
+                <div class="aspas">❝</div>
+
+                <p data-lang="avaliacao1Texto">
+                    Excelente experiência na Casa do João! O ceviche de jacaré e o Pintado Ancestral estavam incríveis. Atendimento impecável e ambiente especial.
+                </p>
+
+                <div class="autor">
+                    <div class="avatar">C</div>
+                    <span data-lang="avaliacao1Nome">
+                        Camila Wlinger
+                    </span>
+                </div>
+
+            </div>
+
+
+
+            <div class="avaliacao-card reveal">
+
+                <div class="estrelas">★★★★★</div>
+                <div class="aspas">❝</div>
+
+                <p data-lang="avaliacao2Texto">
+                    Comida deliciosa, atendimento atencioso e uma recepção que fez toda a diferença. Voltaremos com certeza!
+                </p>
+
+                <div class="autor">
+                    <div class="avatar">P</div>
+                    <span data-lang="avaliacao2Nome">
+                        Pamela Souza
+                    </span>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="avaliacao-card reveal">
+
+                <div class="estrelas">★★★★★</div>
+                <div class="aspas">❝</div>
+
+                <p data-lang="avaliacao3Texto">
+                    Lugar incrível! Ambiente acolhedor, pratos impecáveis e uma experiência que superou todas as expectativas.
+                </p>
+
+                <div class="autor">
+                    <div class="avatar">J</div>
+                    <span data-lang="avaliacao3Nome">
+                        Janayna Felizali
+                    </span>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="avaliacao-card reveal">
+
+                <div class="estrelas">★★★★★</div>
+                <div class="aspas">❝</div>
+
+                <p data-lang="avaliacao4Texto">
+                    A Casa do João ganhou meu coração. Sabores marcantes, clima aconchegante e um atendimento que faz você se sentir em casa.
+                </p>
+
+                <div class="autor">
+                    <div class="avatar">R</div>
+                    <span data-lang="avaliacao4Nome">
+                        Raquel Helena
+                    </span>
+                </div>
+
+            </div>
+
+
         </div>
 
+
+
+        <div class="avaliar-container reveal">
+
+            <p class="texto-avaliar" data-lang="avaliacoesConvite">
+                Gostou da experiência Casa do João?
+            </p>
+
+            <a 
+                href="https://www.google.com/search?authuser=0&hl=pt-BR&cs=1&output=search&q=Casa+do+Jo%C3%A3o&ludocid=15389555377235688201&gsas=1&lsig=AB86z5Vibm_h41Uc3WZh-tvL31kr&kgs=14fa5095890572af&shndl=-1&shem=lsp%2Cnce&source=sh%2Fx%2Fkp%2Flocal%2F3#lrd=0x947c5f2ff27e7a0b:0xd592af140755fb09,3,,,,"
+                target="_blank"
+                class="btn-avaliar"
+                data-lang="avaliacoesBotao"
+            >
+                Nos avalie ⭐
+            </a>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+    <!-- FOOTER / CONTATO -->
+    <footer id="contato" class="reveal">
+
+    <div class="footer-topo reveal">
+
+        
+        <!-- Instagram -->
         <div class="footer-col">
-            <p class="footer-label">Instagram</p>
+            <i class="fa-brands fa-instagram footer-icon"></i>
+
+            <p class="footer-label" data-lang="instagram">Instagram</p>
 
             <p class="footer-info">
                 <a href="https://www.instagram.com/casadojoaorest/"
@@ -219,29 +343,55 @@
             </p>
         </div>
 
+        <!-- TikTok -->
         <div class="footer-col">
+            <i class="fa-brands fa-tiktok footer-icon"></i>
+
+            <p class="footer-label" data-lang="tiktok">TikTok</p>
+
+            <p class="footer-info">
+                <a href="https://www.tiktok.com/@casa.do.joo"
+                   target="_blank"
+                   class="footer-instagram">
+                    @casa.do.joo
+                </a>
+            </p>
+        </div>
+
+        <!-- Localização -->
+        <div class="footer-col">
+            <i class="fa-solid fa-location-dot footer-icon"></i>
+
             <p class="footer-label" data-lang="localizacao">
                 Localização
             </p>
+
             <p class="footer-info">
                 Centro | Bonito - MS
             </p>
         </div>
 
+        <!-- Contato -->
         <div class="footer-col">
+            <i class="fa-brands fa-whatsapp footer-icon"></i>
+
             <p class="footer-label" data-lang="contato">
                 Contato
             </p>
+
             <p class="footer-info">
-                (67) 98140-2463
+                <a href="https://wa.me/5567981402463"
+                   target="_blank"
+                   class="footer-instagram">
+                    (67) 98140-2463
+                </a>
             </p>
         </div>
 
     </div>
-    
 </footer>
 
-        <div class="mapa-localizacao">
+        <div class="mapa-localizacao reveal">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.6175488148483!2d-56.484978625584105!3d-21.127808476721906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x947c5f2ff27e7a0b%3A0xd592af140755fb09!2sCasa%20do%20Jo%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1781396255341!5m2!1spt-BR!2sbr"
             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
             </iframe>
