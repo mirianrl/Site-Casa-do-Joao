@@ -1233,7 +1233,7 @@ footer {
 
 .eventos-label {
     font-family: 'Jost', sans-serif;
-    font-size: 0.68rem;
+    font-size: 0.82rem;
     font-weight: 500;
     letter-spacing: 4px;
     text-transform: uppercase;
@@ -1255,10 +1255,10 @@ footer {
     max-width: 650px;
     margin: 0 auto;
     font-family: 'Cormorant Garamond', serif;
-    font-size: 1.12rem;
+    font-size: 1.35rem;
     font-style: italic;
     font-weight: 300;
-    line-height: 1.6;
+    line-height: 1.7;
     color: #9a8c7e;
 }
 
@@ -1417,25 +1417,20 @@ HOVER
 
 .evento-diferencial strong {
     display: block;
-
     color: #eee;
-
     font-family: 'Cormorant Garamond', serif;
-
-    font-size: 1rem;
+    font-size: 1.45rem;
     font-weight: 500;
+    line-height: 1.2;
 }
 
 .evento-diferencial span {
     display: block;
-
-    color: #777067;
-
-    font-size: 0.78rem;
-
-    margin-top: 2px;
+    color: #9a8c7e;
+    font-size: 1.12rem;
+    margin-top: 5px;
+    line-height: 1.4;
 }
-
 
 /* ==========================================================
    BOTÃO
@@ -1530,7 +1525,7 @@ HOVER
 @media (max-width: 600px) {
 
     .eventos-section {
-        padding: 70px 16px;
+        padding: 70px 10px;
     }
 
     .eventos-header {
@@ -1538,7 +1533,7 @@ HOVER
     }
 
     .eventos-label {
-        font-size: 0.60rem;
+        font-size: 0.72rem;
         letter-spacing: 3px;
         margin-bottom: 12px;
     }
@@ -1548,17 +1543,17 @@ HOVER
     }
 
     .eventos-subtitulo {
-        max-width: 340px;
-        font-size: 1rem;
-        line-height: 1.5;
-        margin-top: 12px;
+    max-width: 360px;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    margin-top: 12px;
     }
 
     /* GALERIA 2x2 */
 
     .eventos-galeria {
         grid-template-columns: 1fr 1fr;
-        gap: 8px;
+        gap: 6px;
     }
 
     .evento-foto {
@@ -1582,17 +1577,19 @@ HOVER
     }
 
     .evento-icone {
-        width: 34px;
-        height: 34px;
-        font-size: 15px;
+        width: 38px;
+        height: 38px;
+        font-size: 16px;
     }
 
     .evento-diferencial strong {
-        font-size: 0.88rem;
+    font-size: 1.05rem;
+    line-height: 1.2;
     }
 
     .evento-diferencial span {
-        font-size: 0.68rem;
+    font-size: 0.88rem;
+    line-height: 1.4;
     }
 
 
@@ -1628,7 +1625,7 @@ HOVER
 
     .eventos-galeria {
         grid-template-columns: 1fr 1fr;
-        gap: 7px;
+        gap: 5px;
     }
 
     .evento-foto {
@@ -1694,10 +1691,13 @@ HOVER
         font-size: 0.55rem;
     }
 }
+
 .evento-foto img {
     width: 100% !important;
     height: auto !important;
+
     display: block !important;
+
     object-fit: contain !important;
     object-position: center !important;
 
