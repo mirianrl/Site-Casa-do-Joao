@@ -61,6 +61,24 @@ const idiomas = {
 
         fraseFinal: "\"Comida para amar, um lugar para lembrar.\"",
 
+        eventosLabel: "Celebrações Especiais",
+        eventosTitulo: "Salão de Eventos",
+        eventosSubtitulo: "Um espaço especial para celebrar momentos importantes, reunir pessoas queridas e criar novas memórias.",
+
+        eventoDiferencial1Titulo: "Ambiente amplo",
+        eventoDiferencial1Texto: "e acolhedor",
+
+        eventoDiferencial2Titulo: "Perfeito para",
+        eventoDiferencial2Texto: "aniversários",
+
+        eventoDiferencial3Titulo: "Confraternizações",
+        eventoDiferencial3Texto: "e celebrações",
+
+        eventoDiferencial4Titulo: "Atendimento dedicado",
+        eventoDiferencial4Texto: "e personalizado",
+
+        eventosBotao: "FALE CONOSCO E RESERVE SEU EVENTO",
+
         anosTitulo: "+18 Anos",
         anosTexto: "Quase duas décadas levando tradição e o verdadeiro sabor de família para a mesa dos nossos clientes.",
 
@@ -149,6 +167,24 @@ const idiomas = {
 
         fraseFinal: "\"Food to love, a place to remember.\"",
 
+        eventosLabel: "Special Celebrations",
+        eventosTitulo: "Event Hall",
+        eventosSubtitulo: "A special space to celebrate important moments, gather loved ones and create new memories.",
+
+        eventoDiferencial1Titulo: "Spacious",
+        eventoDiferencial1Texto: "and welcoming",
+
+        eventoDiferencial2Titulo: "Perfect for",
+        eventoDiferencial2Texto: "birthdays",
+
+        eventoDiferencial3Titulo: "Gatherings",
+        eventoDiferencial3Texto: "and celebrations",
+
+        eventoDiferencial4Titulo: "Dedicated service",
+        eventoDiferencial4Texto: "and personalized",
+
+        eventosBotao: "CONTACT US AND BOOK YOUR EVENT",
+
         anosTitulo: "18+ Years",
         anosTexto: "Nearly two decades bringing tradition and authentic homemade flavor to our guests.",
 
@@ -236,6 +272,24 @@ const idiomas = {
         historia3: "<strong>Hoy:</strong> Ese sueño es una realidad. Nuestro equipo recibe a usted y a su familia con calidad, atención y hospitalidad.",
 
         fraseFinal: "\"Comida para amar, un lugar para recordar.\"",
+
+        eventosLabel: "Celebraciones Especiales",
+        eventosTitulo: "Salón de Eventos",
+        eventosSubtitulo: "Un espacio especial para celebrar momentos importantes, reunir a sus seres queridos y crear nuevos recuerdos.",
+
+        eventoDiferencial1Titulo: "Ambiente amplio",
+        eventoDiferencial1Texto: "y acogedor",
+
+        eventoDiferencial2Titulo: "Perfecto para",
+        eventoDiferencial2Texto: "cumpleaños",
+
+        eventoDiferencial3Titulo: "Reuniones",
+        eventoDiferencial3Texto: "y celebraciones",
+
+        eventoDiferencial4Titulo: "Atención dedicada",
+        eventoDiferencial4Texto: "y personalizada",
+
+        eventosBotao: "CONTÁCTENOS Y RESERVE SU EVENTO",
 
         anosTitulo: "Más de 18 Años",
         anosTexto: "Casi dos décadas llevando tradición y el auténtico sabor casero a nuestros clientes.",
